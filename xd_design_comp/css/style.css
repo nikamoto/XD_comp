@@ -375,6 +375,12 @@ body {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 767px) {
+  .plan .plan_list {
+    display: block;
+  }
+}
+
 .plan .plan_item {
   width: calc((100% / 3) - 14px);
 }
@@ -507,5 +513,3 @@ body {
   font-size: 1.2rem;
   color: #fff;
 }
-
-@me;

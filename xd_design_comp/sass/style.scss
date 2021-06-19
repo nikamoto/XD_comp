@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import "setting";
+
 /* resetCSS */
 
 html,
@@ -343,6 +345,9 @@ body {
   }
   .plan_list {
     display: flex;
+    @include media(m) {
+      display: block;
+    }
     justify-content: space-between;
   }
   .plan_item {
