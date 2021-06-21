@@ -4,7 +4,7 @@
 $breakpoints: (
   xs: "only screen and (max-width: 320px)",
   s: "only screen and (max-width: 575px)",
-  m: "only screen and (max-width: 767px)",
+  m: "screen and (max-width: 767px)",
   l: "only screen and (max-width: 991px)",
   xl: "only screen and (max-width: 1199px)",
 );
@@ -12,5 +12,11 @@ $breakpoints: (
 @mixin media($breakpoint) {
   @media #{map-get($breakpoints, $breakpoint)} {
     @content;
+  }
+}
+
+@media screen and (max-width:764px) {
+  .mainvisual .mv_txt_block .mainvisual_txt {
+    font-size: 3rem;
   }
 }
