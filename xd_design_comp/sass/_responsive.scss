@@ -22,6 +22,10 @@
     }
   }
 
+  /*ヒストリー*/
+  .history .history_content {
+    writing-mode:horizontal-tb;
+  }
   .content {
     width: 100%;
     .content_box {
