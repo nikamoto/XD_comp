@@ -14,7 +14,11 @@
       display: none;
     }
     .reserve {
+      width: 30%;
       margin-left: 0;
+    }
+    .nav_toggle {
+      display: block;
     }
   }
 
@@ -31,4 +35,10 @@
       display: block;
     }
   }
+
+  .information .information_content {
+    display: block;
+  }
 }
+
+
