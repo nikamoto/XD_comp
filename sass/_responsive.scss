@@ -2,13 +2,15 @@
 
 @media screen and (max-width: 764px) {
   .header {
+    padding-top: 10px;
+    justify-content: space-around;
     .header_logo {
       width: 40%;
     }
     .nav {
       width: 100vw;
       height: 100vh;
-      background: rgba(0,0,0,.5);
+      background: rgba(0, 0, 0, 0.5);
       margin-left: 0;
       transform: translateX(100%);
       display: none;
@@ -22,9 +24,28 @@
     }
   }
 
+  /*メインヴィジュアル*/
+  .mv_img {
+    width: 100vw;
+    height: 100vh;
+    img {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
   /*ヒストリー*/
-  .history .history_content {
-    writing-mode:horizontal-tb;
+  .history {
+    .history_content {
+      writing-mode: horizontal-tb;
+      width: 90%;
+      .history_title {
+        text-indent: 0;
+      }
+      .histori_block p {
+        letter-spacing: 7px;
+      }
+    }
   }
   .content {
     width: 100%;
@@ -44,5 +65,3 @@
     display: block;
   }
 }
-
-
