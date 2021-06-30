@@ -196,7 +196,8 @@ body {
     }
     img {
       width: 15%;
-      object-fit: contain;
+      -o-object-fit: contain;
+         object-fit: contain;
     }
   }
   .nav_toggle {
@@ -235,7 +236,8 @@ body {
     height: auto;
     img {
       width: 100%;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       display: block;
     }
   }
@@ -250,7 +252,9 @@ body {
     top: 32%;
     .mainvisual_txt {
       font-size: 2rem;
-      writing-mode: vertical-rl;
+      -webkit-writing-mode: vertical-rl;
+          -ms-writing-mode: tb-rl;
+              writing-mode: vertical-rl;
       color: #fff;
     }
   }
@@ -269,8 +273,10 @@ body {
   .history_content {
     padding: 13% 0 8% 0;
     -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
+            text-orientation: upright;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
@@ -440,7 +446,9 @@ body {
   background-image: url(../img/bg3.png);
   padding-top: 5%;
   .footer_list {
-    writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
     margin: 0 auto;
     margin-bottom: 90px;
     .footer_item {
