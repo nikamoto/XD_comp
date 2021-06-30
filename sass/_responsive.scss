@@ -25,12 +25,23 @@
   }
 
   /*メインヴィジュアル*/
-  .mv_img {
-    width: 100vw;
-    height: 100vh;
-    img {
+  .mainvisual {
+    .mv_img {
       width: 100vw;
       height: 100vh;
+      img {
+        width: 100vw;
+        height: 100vh;
+      }
+    }
+    .mv_txt_block {
+      width: 45%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .mainvisual_txt {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -40,7 +51,10 @@
       writing-mode: horizontal-tb;
       width: 90%;
       .history_title {
+        font-weight: bold;
+        font-size: 3rem;
         text-indent: 0;
+        letter-spacing: 2px;
       }
       .histori_block p {
         letter-spacing: 7px;
