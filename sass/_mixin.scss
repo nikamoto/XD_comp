@@ -7,3 +7,7 @@
   line-height: 50px;
   border: 1px solid #000;
 }
+
+@mixin font($fon: 3.6rem) {
+  font-size: $fon;
+}
