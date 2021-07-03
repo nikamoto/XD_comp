@@ -308,35 +308,35 @@ body {
 /*ルームエリア*/
 .content {
   margin-bottom: 10%;
+  .content_title {
+    margin-bottom: 60px;
+    @include font;
+  }
+  .content_img {
+    width: 54.685%;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
   .content_box {
     padding-top: 10%;
     display: flex;
     flex-wrap: wrap;
-    .content_img {
-      width: 54.685%;
-      img {
-        display: block;
-        width: 100%;
-      }
-    }
     .content_body {
       margin-left: 7%;
-      .content_title {
-        margin-bottom: 60px;
-        font-size: $font;
-      }
-      .content_text {
-        margin-bottom: 60px;
-        line-height: 2;
-        letter-spacing: 0;
-      }
-      .buttom {
+      .button {
         @include button;
       }
     }
   }
   .content_body:nth-child(2) {
     margin: auto;
+  }
+  .content_text {
+    margin-bottom: 60px;
+    line-height: 2;
+    letter-spacing: 0;
   }
 }
 .content_reverse {
@@ -351,7 +351,7 @@ body {
 .section_title {
   margin-bottom: 5%;
   text-align: center;
-  $fontsize: 3.6rem;
+  @include font;
 }
 .plan {
   padding: 7.7% 0 13%;
@@ -417,27 +417,27 @@ body {
   background-image: url(../img/bg.png);
   background-position: center;
   background-size: cover;
-  padding: 5% 0;
+  padding: 7% 0;
+  .access_img {
+    width: 45%;
+    img {
+      width: 100%;
+    }
+  }
   .access_wrapper {
     margin: 0 auto;
     margin-bottom: 20px;
     max-width: 1180px;
     display: flex;
     justify-content: space-around;
-    .access_img {
-      width: 45%;
-      img {
-        width: 100%;
-      }
-    }
-    .access_info {
-      width: 45%;
-      padding: 20px 0;
-    }
   }
   .map_img {
     width: 41%;
     margin: 0 auto;
+  }
+  .access_info {
+    width: 45%;
+    padding: 20px 0;
   }
 }
 
