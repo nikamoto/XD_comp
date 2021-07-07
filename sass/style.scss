@@ -236,6 +236,7 @@ body {
     height: auto;
     img {
       width: 100%;
+      -ms-object-fit:cover;
       -o-object-fit: cover;
          object-fit: cover;
       display: block;
