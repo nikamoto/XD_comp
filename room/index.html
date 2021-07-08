@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+  伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+  <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" href="../css/room.css">
 </head>
+
 <body>
-  <strong>内容を変更しました</strong>
-  <h1>hihi</h1>
-  <h2>hihi</h2>
-  <h3>hihi</h3>
-  <div>access_area</div>
-  <h1>会社概要</h1>
-  
+  <header class="header">
+    <h1 class="header__logo">
+      <img src="../img/sub-header-logo.png" alt="">
+    </h1>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="">お部屋</a></li>
+        <li class="nav_item"><a href="">お料理</a></li>
+        <li class="nav_item"><a href="">温泉</a></li>
+      </ul>
+    </nav>
+    <div class="reserve">
+      <img src="../img/calender.png" alt="">
+      <a href="">宿泊予約</a>
+    </div>
+    <span class="nav_toggle">
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+    <!-- modal -->
+    <section class="modalArea">
+      <h2 class="modal_title">宿泊予約</h2>
+      <form action="">
+        <label class="modal_label" for="name">お名前</label>
+        <input id="name" type="text">
+        <label class="modal_label" for="mail">メールアドレス</label>
+        <input id="mail" type="text">
+        <label class="modal_label" for="plan">ご希望プラン</label>
+        <select name="plan" id="plan">
+          <option value="who">--- 選択してください ---</option>
+          <option value="懐石プラン">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+          <option value="特別宿泊プラン">平日に優雅に楽しむ、特別宿泊プラン
+          <option value="ファミリープラン">絶景貸切露天と個室会席を満喫できるファミリープラン
+          </option>
+        </select>
+        <label for="calendar">日付選択</label>
+        <input id="calendar" type="date">
+
+      </form>
+    </section>
+  </header>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
