@@ -157,7 +157,6 @@ body {
 
 /* ヘッダー */
 .header {
-  padding-top: 10px;
   z-index: 999;
   position: fixed;
   display: flex;
@@ -165,7 +164,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: stretch;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   .header__logo {
     width: 20%;
