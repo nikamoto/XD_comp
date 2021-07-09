@@ -14,21 +14,21 @@
 
 <body>
   <header class="header">
-    <h1 class="header__logo">
-      <img src="../img/sub-header-logo.png" alt="">
+    <h1 class="header-logo">
+      <img class="header-logo__img" src="../img/sub-header-logo.png" alt="">
     </h1>
     <nav class="nav">
-      <ul class="nav_list">
-        <li class="nav_item"><a href="">お部屋</a></li>
-        <li class="nav_item"><a href="">お料理</a></li>
-        <li class="nav_item"><a href="">温泉</a></li>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="">お部屋</a></li>
+        <li class="nav__item"><a class="nav__link" href="">お料理</a></li>
+        <li class="nav__item"><a class="nav__link" href="">温泉</a></li>
       </ul>
     </nav>
-    <div class="reserve">
-      <img src="../img/calender.png" alt="">
-      <a href="">宿泊予約</a>
+    <div class="header-reserve">
+      <img class="header-reserve__img" src="../img/calender.png" alt="予約カレンダー">
+      <a class="header-reserve__link" href="">宿泊予約</a>
     </div>
-    <span class="nav_toggle">
+    <span class="nav-toggle">
       <i></i>
       <i></i>
       <i></i>
@@ -51,10 +51,25 @@
         </select>
         <label for="calendar">日付選択</label>
         <input id="calendar" type="date">
-
       </form>
     </section>
   </header>
+
+  <main class="main">
+    <section class="kv">
+      <div class="ky__img-wrapper">
+        <img class="kv__img" src="../img/oheya-header.png" alt="お部屋の画像">
+      </div>
+      <p class="kv__title">お部屋</p>
+    </section>
+    <!-- /.ky -->
+
+    <section class="container">
+      
+    </section>
+    <!-- /.container -->
+  </main>
+  <!-- /.main -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <script src="main.js"></script>
