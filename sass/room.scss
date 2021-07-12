@@ -257,3 +257,63 @@ body {
     transform: translate(-50%, -50%);
   }
 }
+
+/*メインエリア*/
+.room {
+  .room__inner {
+    max-width: 1210px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .breadcrumb {
+    display: flex;
+  }
+  .breadcrumb__item:first-child::after {
+    content: ">";
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .room__subtitle-wrap {
+    text-align: center;
+  }
+  .contents {
+    position: relative;
+  }
+  .room__contents {
+    height: 431px;
+  }
+  .contents__img-wrap {
+    width: 44.5%;
+  }
+  .contents__img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+  }
+  .contents__body {
+    padding: 55px 5.5% 20px 20%;
+    position: absolute;
+    right: 0;
+    top: 13.2%;
+    width: 68.8%;
+    height: 381px;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+  }
+  .contents__title {
+    font-size: $font24;
+    font-weight: bold;
+    margin-bottom: 45px;
+  }
+  .contents__text {
+    line-height: 2;
+    margin-bottom: 45px;
+  }
+  .contents__lead {
+    font-size: $font14;
+  }
+}
