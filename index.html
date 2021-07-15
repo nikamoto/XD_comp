@@ -14,124 +14,129 @@
 
 <body>
   <header class="header">
-    <h1 class="header_logo">
-      <img src="img/top-header-logo.png" alt="">
+    <h1 class="header-logo">
+      <img class="header-logo__img" src="img/top-header-logo.png" alt="ロゴ">
     </h1>
     <nav class="nav">
-      <ul class="nav_list">
-        <li class="nav_item"><a href="">お部屋</a></li>
-        <li class="nav_item"><a href="">お料理</a></li>
-        <li class="nav_item"><a href="">温泉</a></li>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="">お料理</a></li>
+        <li class="nav__item"><a class="nav__link" href="">お部屋</a></li>
+        <li class="nav__item"><a class="nav__link" href="">温泉</a></li>
       </ul>
     </nav>
     <div class="reserve">
-      <img src="img/calender.png" alt="">
-      <a href="">宿泊予約</a>
+      <img class="reserve__img" src="img/calender.png" alt="予約の画像">
+      <a class="reserve__link" href="">宿泊予約</a>
     </div>
-    <span class="nav_toggle">
-      <i></i>
-      <i></i>
-      <i></i>
+    <span class="nav-toggle">
+      <i class="nav-toggle__item"></i>
+      <i class="nav-toggle__item"></i>
+      <i class="nav-toggle__item"></i>
     </span>
-    <!-- modal -->
-    <section class="modalArea">
-      <h2 class="modal_title">宿泊予約</h2>
-      <form action="">
-        <label class="modal_label" for="name">お名前</label>
+
+    <section class="modal">
+      <h2 class="modal__title">宿泊予約</h2>
+      <form class="modal__body" action="">
+        <label class="modal__label" for="name">お名前</label>
         <input id="name" type="text">
-        <label class="modal_label" for="mail">メールアドレス</label>
+        <label class="modal__label" for="mail">メールアドレス</label>
         <input id="mail" type="text">
-        <label class="modal_label" for="plan">ご希望プラン</label>
-        <select name="plan" id="plan">
+        <label class="modal__label" for="plan">ご希望プラン</label>
+        <select class="modal__list" name="plan" id="plan">
           <option value="who">--- 選択してください ---</option>
           <option value="懐石プラン">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
           <option value="特別宿泊プラン">平日に優雅に楽しむ、特別宿泊プラン
           <option value="ファミリープラン">絶景貸切露天と個室会席を満喫できるファミリープラン
           </option>
         </select>
-        <label for="calendar">日付選択</label>
+        <label class="modal__date" for="calendar">日付選択</label>
         <input id="calendar" type="date">
       </form>
     </section>
+    <!-- /modal -->
   </header>
+  <!-- /header -->
+
   <main class="main">
-    <section class="mainvisual">
-      <div class="mv_img">
-        <img src="img/mainbg01.png" alt="">
+    <section class="mv">
+      <div class="mv__img-wrap">
+        <img class="mv__img" src="img/mainbg01.png" alt="">
       </div>
-      <div class="mv_txt_block">
-        <p class="mainvisual_txt">頑張る人の</p>
-        <p class="mainvisual_txt">頑張らない時間</p>
+      <div class="mv__txt-wrap">
+        <p class="mv__txt">頑張る人の</p>
+        <p class="mv__txt">頑張らない時間</p>
       </div>
     </section>
 
     <section class="history">
-      <div class="history_content">
-        <h2 class="history_title">温海温泉の<br>美しさに癒されて</h2>
-        <div class="histori_block">
-          <p> 東北の奥座敷である温海温泉郷</p>
-          <p> 開湯は約<span>1300</span>年前とされ、役小角が</p>
-          <p> 発見したと伝えられます</p>
+      <div class="history__content">
+        <h2 class="history__title">温海温泉の<br>美しさに癒されて</h2>
+        <div class="histori__block">
+          <p class="history__txt"> 東北の奥座敷である温海温泉郷</p>
+          <p class="history__txt"> 開湯は約<span>1300</span>年前とされ、役小角が</p>
+          <p class="history__txt"> 発見したと伝えられます</p>
         </div>
-        <div class="histori_block">
-          <p> 石井花壇は江戸より続く由緒ある旅館で</p>
-          <p>クラシックな作りの中に大正ロマンあふれた</p>
-          <p> 内装をの残しております</p>
+        <div class="histori__block">
+          <p class="history__txt"> 石井花壇は江戸より続く由緒ある旅館で</p>
+          <p class="history__txt">クラシックな作りの中に大正ロマンあふれた</p>
+          <p class="history__txt"> 内装をの残しております</p>
         </div>
-        <div class="histori_block">
-          <p>圧倒的癒しの空間で</p>
-          <p> 頑張る現代人に</p>
-          <p> 頑張らない圧倒的な非日常をご提供します</p>
+        <div class="histori__block">
+          <p class="history__txt">圧倒的癒しの空間で</p>
+          <p class="history__txt"> 頑張る現代人に</p>
+          <p class="history__txt"> 頑張らない圧倒的な非日常をご提供します</p>
         </div>
-        <p class="history_kadan">石井花壇</p>
+        <p class="history__kadan">石井花壇</p>
       </div>
     </section>
 
+
+     <!-- コンテンツエリア -->
     <section class="content">
-      <div class="content_box">
-        <figure class="content_img">
-          <img src="img/oheya-top.png" alt="">
+      <div class="content__box">
+        <figure class="content__img-wrap">
+          <img class="content__img" src="img/oheya-top.png" alt="お部屋の画像">
         </figure>
-        <div class="content_body">
-          <h2 class="content_title">喧騒から離れた空間<br>
+        <div class="content__body">
+          <h2 class="content__title">喧騒から離れた空間<br>
             心落ち着く至極のひととき</h2>
-          <p class="content_text">
+          <p class="content__text">
             まるで時が止まったかのような、圧倒的な静寂のなかで、<br>
             ひたすらにゆったりと…。<br>
             最高級の「何もしない時間」をお過ごしください。
           </p>
-          <div class="button"><a href="">お部屋について</a></div>
+          <div class="content__button button"><a href="">お部屋について</a></div>
         </div>
       </div>
-      <div class="content_box content_reverse">
-        <figure class="content_img">
-          <img src="img/menu-top.png" alt="">
+      <div class="content__box content-reverse">
+        <figure class="content__img-wrap">
+          <img class="content__img" src="img/menu-top.png" alt="">
         </figure>
-        <div class="content_body">
-          <h2 class="content_title">出迎えるのは<br>
+        <div class="content__body">
+          <h2 class="content__title">出迎えるのは<br>
             極上の温海料理</h2>
-          <p class="content_text">
+          <p class="content__text">
             最も旬の食材を愉しむ、最高の贅沢を<br>
             最高級A5ランクの米沢牛と共に頂く。<br>
             あなたの人生史に残る「極上の感動」を<br>
             お約束します。
           </p>
-          <div class="button"><a href="">お部屋について</a></div>
+          <div class="content__button button"><a href="">お部屋について</a></div>
         </div>
       </div>
-      <div class="content_box">
-        <figure class="content_img">
-          <img src="img/oheya02.png" alt="">
+      <div class="content__box">
+        <figure class="content__img-wrap">
+          <img class="content__img" src="img/oheya02.png" alt="">
         </figure>
-        <div class="content_body">
-          <h2 class="content_title">疲れ切った身体にやすらぎを<br>
+        <div class="content__body">
+          <h2 class="content__title">疲れ切った身体にやすらぎを<br>
             温海の源泉に癒やされて</h2>
-          <p class="content_text">
+          <p class="content__text">
             古くは弘法大師の病をも治療したと言われる熱海の泉質。<br>
             現代人の疲弊しきった身体を修復する最高級の湯治場として<br>
             ご活用ください。。
           </p>
-          <div class="button"><a href="">お部屋について</a></div>
+          <div class="content__button button"><a href="">お部屋について</a></div>
         </div>
       </div>
     </section>
@@ -139,58 +144,58 @@
 
     <!-- プランエリア -->
     <section class="plan">
-      <div class="icon"><img src="img/logo02.png" alt=""></div>
-      <h2 class="section_title">おすすめご宿泊プラン</h2>
-      <div class="plan_wrapper">
-        <ul class="plan_list">
-          <li class="plan_item">
-            <div class="plan_img">
-              <img src="img/recommended01.png" alt="">
+      <div class="icon"><img class="icon__img" src="img/logo02.png" alt="花のマーク"></div>
+      <h2 class="section-title">おすすめご宿泊プラン</h2>
+      <div class="plan__wrapper">
+        <ul class="plan__list">
+          <li class="plan__item">
+            <div class="plan__img-wrap">
+              <img class="plan__img" src="img/recommended01.png" alt="魚料理の画像">
             </div>
-            <div class="plan_area">
-              <h3 class="plan_title">朝食付きプラン、日本近海で取れた<br>
+            <div class="plan__area">
+              <h3 class="plan__title">朝食付きプラン、日本近海で取れた<br>
                 のどぐろを朝食として…</h3>
-              <p class="plan_txt">最高級と称されるのどぐろ、正式には「アカ<br>
+              <p class="plan__txt">最高級と称されるのどぐろ、正式には「アカ<br>
                 ムツ」と呼ばれる魚、味は独特の上品な味わ<br>
                 いで、焼いても煮ても美味</p>
             </div>
           </li>
-          <li class="plan_item">
-            <div class="plan_img">
-              <img src="img/recommended02.png" alt="">
+          <li class="plan__item">
+            <div class="plan__img-wrap">
+              <img class="plan__img" src="img/recommended02.png" alt="">
             </div>
-            <div class="plan_area">
-              <h3 class="plan_title">【期間限定】熱海蟹をたっぷりと<br>
+            <div class="plan__area">
+              <h3 class="plan__title">【期間限定】熱海蟹をたっぷりと<br>
                 愉しむプラン。</h3>
-              <p class="plan_txt">温海で水揚げされた蟹は「温海蟹」<br>
+              <p class="plan__txt">温海で水揚げされた蟹は「温海蟹」<br>
                 として知られ、嗜好品として愛されて<br>
                 きました。この宿泊プランでは存分に</p>
             </div>
           </li>
-          <li class="plan_item">
-            <div class="plan_img">
-              <img src="img/recommended03.png" alt="">
+          <li class="plan__item">
+            <div class="plan__img-wrap">
+              <img class="plan__img" src="img/recommended03.png" alt="">
             </div>
-            <div class="plan_area">
-              <h3 class="plan_title">【平日限定】贅沢美味懐石プラン。
+            <div class="plan__area">
+              <h3 class="plan__title">【平日限定】贅沢美味懐石プラン。
                 海辺の四季旬彩プラン。</h3>
-              <p class="plan_txt">熱海近海で取れた魚を鮮度そのままに舟盛りに<br>
+              <p class="plan__txt">熱海近海で取れた魚を鮮度そのままに舟盛りに<br>
                 してご提供。生きた味をお楽しみください。</p>
             </div>
           </li>
         </ul>
       </div>
-      <!-- /.plan -->
     </section>
+    <!-- /.plan -->
 
 
     <!-- お知らせエリア -->
     <section class="information">
       <div class="icon">
-        <img src="img/logo02.png" alt="">
+        <img class="icon__img" src="img/logo02.png" alt="">
       </div>
-      <h2 class="section_title">お知らせ</h2>
-      <div class="information_wrapper">
+      <h2 class="section-title">お知らせ</h2>
+      <div class="information__wrapper">
         <div class="info_tab">
           <p class="tab active">営業情報</p>
           <p class="tab">その他</p>
