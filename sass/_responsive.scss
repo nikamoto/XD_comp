@@ -1,11 +1,10 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 764px) {
-  
   .header {
     padding-top: 10px;
     justify-content: space-around;
-    .header_logo {
+    .header-logo {
       width: 40%;
     }
     .nav {
@@ -20,7 +19,7 @@
       width: 30%;
       margin-left: 0;
     }
-    .nav_toggle {
+    .nav-toggle {
       display: block;
     }
     .nav_toggle-color {
@@ -29,57 +28,58 @@
   }
 
   /*メインヴィジュアル*/
-  .mainvisual {
-    .mv_img {
+  .mv {
+    .mv__img-wrap {
       width: 100vw;
       height: 100vh;
-      img {
-        width: 100vw;
-        height: 100vh;
-      }
     }
-    .mv_txt_block {
+    .mv__img {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .mv__txt-wrap {
       width: 45%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      .mainvisual_txt {
-        font-size: 3rem;
-      }
+    }
+    .mv__txt {
+      font-size: 3rem;
     }
   }
 
   /*ヒストリー*/
   .history {
-    .history_content {
+    .history__content {
       writing-mode: horizontal-tb;
       width: 90%;
-      .history_title {
-        font-weight: bold;
-        font-size: 3rem;
-        text-indent: 0;
-        letter-spacing: 2px;
-      }
-      .histori_block p {
-        letter-spacing: 7px;
-      }
+    }
+    .history__title {
+      font-weight: bold;
+      font-size: 3rem;
+      text-indent: 0;
+      letter-spacing: 2px;
+    }
+    .history__txt {
+      letter-spacing: 7px;
     }
   }
   .content {
     width: 100%;
-    .content_box {
+    .content__box {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
       display: block;
       position: relative;
     }
-    .content_img {
+    .content__img-wrap {
       width: 100%;
     }
     .button {
       margin: 0 auto;
     }
-    .content_title {
+    .content__title {
       margin-top: 20px;
       font-size: 2.5rem;
     }
@@ -87,20 +87,20 @@
 
   /*Planエリア*/
   .plan {
-    .plan_wrapper {
+    .plan__wrapper {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
     }
-    .plan_list {
+    .plan__list {
       display: block;
     }
-    .plan_img {
+    .plan__img-wrap {
       width: 100%;
-      img {
-        width: 100%
-      }
     }
-    .plan_item {
+    .plan__img {
+      width: 100%;
+    }
+    .plan__item {
       width: 100%;
       margin-bottom: 1.5rem;
     }
