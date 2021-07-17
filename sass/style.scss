@@ -149,8 +149,16 @@ body {
   font-size: 1.6rem;
 }
 
+.section-title {
+  margin-bottom: 5%;
+  text-align: center;
+  @include font;
+}
 .modal {
   display: none;
+}
+.icon {
+  text-align: center;
 }
 
 /* ヘッダー */
@@ -352,9 +360,6 @@ body {
 
 /*  プランエリア  */
 
-.icon {
-  text-align: center;
-}
 .section-title {
   margin-bottom: 5%;
   text-align: center;
@@ -390,32 +395,33 @@ body {
   padding-top: 5.7%;
   margin: 0 auto;
   max-width: 1180px;
-  .info_tab {
+  .info__tab-wrap {
     text-align: center;
     margin-bottom: 5%;
   }
-  .tab {
+  .info__tab {
     display: inline-block;
     margin-right: 20px;
+    cursor: pointer;
   }
-  .information_content {
+  .information__content {
     margin: 0 auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .information_item {
+  .information__item {
     display: flex;
     width: calc((100% / 2) - 16px);
     background-color: #f6f6f6;
     margin-bottom: 20px;
     padding: 10px;
   }
-  .news_article {
+  .block__def {
     margin-left: 20px;
   }
-  .information_content_etc {
+  .information-content-etc {
     display: none;
   }
 }
@@ -425,24 +431,24 @@ body {
   background-position: center;
   background-size: cover;
   padding: 7% 0;
-  .access_img {
+  .access__img-wrap {
     width: 45%;
-    img {
-      width: 100%;
-    }
   }
-  .access_wrapper {
+  .access__img {
+    width: 100%;
+  }
+  .access__wrapper {
     margin: 0 auto;
     margin-bottom: 20px;
     max-width: 1180px;
     display: flex;
     justify-content: space-around;
   }
-  .map_img {
+  .map-img {
     width: 41%;
     margin: 0 auto;
   }
-  .access_info {
+  .access__info {
     width: 45%;
     padding: 20px 0;
   }
@@ -452,26 +458,27 @@ body {
 .footer {
   background-image: url(../img/bg3.png);
   padding-top: 5%;
-  .footer_list {
+  .footer__list {
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
     margin: 0 auto;
     margin-bottom: 90px;
-    .footer_item {
-      margin-right: 10px;
-      font-size: 1.8rem;
-      line-height: 1.7;
-      a {
-        letter-spacing: 2rem;
-        color: #000;
-      }
-    }
   }
-  .section_title {
+  .footer__item {
+    margin-right: 10px;
+    font-size: 1.8rem;
+    line-height: 1.7;
+  }
+  .footer__link {
+    letter-spacing: 2rem;
+    color: #000;
+  }
+
+  .section-title {
     margin-bottom: 65px;
   }
-  .access_area {
+  .access-area {
     text-align: center;
     margin-bottom: 60px;
   }
@@ -480,11 +487,11 @@ body {
     background-color: #000;
     height: 60px;
     align-self: center;
-    .copyright {
-      line-height: 60px;
-      font-size: 1.2rem;
-      color: #fff;
-    }
+  }
+  .cr__copyright {
+    line-height: 60px;
+    font-size: 1.2rem;
+    color: #fff;
   }
 }
 
