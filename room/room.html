@@ -7,53 +7,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
   伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
-  <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+  <title>お部屋　石井花壇 | 温海温泉旅館【公式サイト】</title>
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-  <link rel="stylesheet" href="../css/room.css">
+  <link rel="stylesheet" href="../css/lower-page.css">
 </head>
 
 <body>
   <header class="header">
-    <h1 class="header_logo">
-      <img src="../img/sub-header-logo.png" alt="">
+    <h1 class="header-logo">
+      <a class="header-logo__link" href="../index.html"><img class="header-logo__img" src="../img/sub-header-logo.png"
+          alt="ロゴ"></a>
     </h1>
     <nav class="nav">
-      <ul class="nav_list">
-        <li class="nav_item"><a href="">お部屋</a></li>
-        <li class="nav_item"><a href="">お料理</a></li>
-        <li class="nav_item"><a href="">温泉</a></li>
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="../menu/menu.html">お料理</a></li>
+        <li class="nav__item"><a class="nav__link" href="../room/room.html">お部屋</a></li>
+        <li class="nav__item"><a class="nav__link" href="../bath/bath.html">温泉</a></li>
       </ul>
     </nav>
     <div class="reserve">
-      <img src="../img/calender.png" alt="">
-      <a href="">宿泊予約</a>
+      <img class="reserve__img" src="../img/calender.png" alt="予約の画像">
+      <a class="reserve__link" href="">宿泊予約</a>
     </div>
-    <span class="nav_toggle">
-      <i class="nav_toggle-color"></i>
-      <i class="nav_toggle-color"></i>
-      <i class="nav_toggle-color"></i>
+    <span class="nav-toggle">
+      <i class="nav-toggle__item"></i>
+      <i class="nav-toggle__item"></i>
+      <i class="nav-toggle__item"></i>
     </span>
-    <!-- modal -->
-    <section class="modalArea">
-      <h2 class="modal_title">宿泊予約</h2>
-      <form action="">
-        <label class="modal_label" for="name">お名前</label>
+
+    <section class="modal">
+      <h2 class="modal__title">宿泊予約</h2>
+      <form class="modal__body" action="">
+        <label class="modal__label" for="name">お名前</label>
         <input id="name" type="text">
-        <label class="modal_label" for="mail">メールアドレス</label>
+        <label class="modal__label" for="mail">メールアドレス</label>
         <input id="mail" type="text">
-        <label class="modal_label" for="plan">ご希望プラン</label>
-        <select name="plan" id="plan">
+        <label class="modal__label" for="plan">ご希望プラン</label>
+        <select class="modal__list" name="plan" id="plan">
           <option value="who">--- 選択してください ---</option>
           <option value="懐石プラン">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
           <option value="特別宿泊プラン">平日に優雅に楽しむ、特別宿泊プラン
           <option value="ファミリープラン">絶景貸切露天と個室会席を満喫できるファミリープラン
           </option>
         </select>
-        <label for="calendar">日付選択</label>
+        <label class="modal__date" for="calendar">日付選択</label>
         <input id="calendar" type="date">
       </form>
+      <!-- /.modal__body -->
     </section>
+    <!-- /.modal -->
   </header>
+  <!-- /.header -->
+
   <main class="main">
     <section class="kv">
       <div class="ky__img-wrapper">
@@ -63,22 +68,22 @@
     </section>
     <!-- /.ky -->
 
-    <section class="room">
-      <div class="room__inner">
+    <section class="section">
+      <div class="section__inner">
         <ul class="breadcrumb">
           <li class="breadcrumb__item"><a href="../index.html" class="breadcrumb_link">トップ</a></li>
           <li class="breadcrumb__item">お部屋</li>
         </ul>
         <!-- /breadcrumb -->
-        <div class="room__subtitle-wrap">
-          <p class="room__subtitle">
+        <div class="section__subtitle-wrap">
+          <p class="section__subtitle">
             創業より受け継がれてきた石井花壇の和の造り<br>
             温海の雄大な絶景を堪能していただけるように設計された客室<br>
             ゆるやかに流れ行く時間に身を委ねて
           </p>
         </div>
         <!-- /.room__subtitle-wrap -->
-        <div class="contents room__contents">
+        <div class="contents section__contents">
           <figure class="contents__img-wrap">
             <img src="../img/oheya01.png" alt="お部屋の画像" class="contents__img">
           </figure>
@@ -91,14 +96,14 @@
               ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。
             </p>
           </div>
-          <!-- /.contents__txt -->
+          <!-- /.contents__body -->
         </div>
         <!-- /.contents -->
       </div>
       <!-- /.room__inner -->
 
-      <div class="room__inner">
-        <div class="contents room__contents">
+      <div class="section__inner">
+        <div class="contents section__contents">
           <figure class="contents__img-wrap contents__img-wrap-right">
             <img src="../img/oheya02.png" alt="お部屋の画像" class="contents__img">
           </figure>
@@ -116,10 +121,10 @@
         </div>
         <!-- /.contents -->
       </div>
-      <!-- /.room__inner -->
+      <!-- /.section__inner -->
 
-      <div class="room__inner">
-        <div class="contents room__contents">
+      <div class="section__inner">
+        <div class="contents section__contents">
           <figure class="contents__img-wrap">
             <img src="../img/oheya03.png" alt="お部屋の画像" class="contents__img">
           </figure>
@@ -135,9 +140,9 @@
         </div>
         <!-- /.contents -->
       </div>
-      <!-- /.room__inner -->
+      <!-- /.section__inner -->
     </section>
-    <!-- /room -->
+    <!-- /section -->
 
     <footer class="footer">
       <ul class="footer_list">
