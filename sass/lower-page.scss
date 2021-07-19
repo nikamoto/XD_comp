@@ -2,7 +2,7 @@
 
 @charset "UTF-8";
 
-@import "setting";
+@import "base";
 
 @import "mixin";
 
@@ -375,6 +375,11 @@ body {
       color: #fff;
     }
   }
+}
+@media screen and (max-width: 764px) {
+ 
+
+
 }
 
 @import "responsive";

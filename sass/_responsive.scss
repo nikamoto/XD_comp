@@ -135,4 +135,18 @@
       width: 100%;
     }
   }
+  .section {
+    .content__img-wrap--sp-w {
+      width: 100%;
+    }
+    .contents__body--sp-center {
+      position: static;
+      width: 100%;
+      padding: 0;
+      height: auto;
+    }
+    .contents__img-wrap-right {
+      position: static;
+    }
+  }
 }
