@@ -209,7 +209,6 @@ body {
     -o-object-fit: contain;
     object-fit: contain;
   }
-
   .nav-toggle {
     display: none;
     position: relative;
@@ -242,9 +241,17 @@ body {
 .mv {
   position: relative;
   width: 100%;
+  height: auto;
   .mv__img-wrap {
+    position: relative;
     width: 100%;
-    height: auto;
+    height: 1079px;
+    overflow: hidden;
+  }
+  .mv__item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
   }
   .mv__img {
     width: 100%;
@@ -252,8 +259,8 @@ body {
     -o-object-fit: cover;
     object-fit: cover;
     display: block;
+    transition: all 3s;
   }
-
   .mv__txt-wrap {
     width: 10%;
     display: flex;

@@ -142,11 +142,21 @@
     .contents__body--sp-center {
       position: static;
       width: 100%;
-      padding: 0;
+      padding: 20px 0 0 0;
       height: auto;
     }
     .contents__img-wrap-right {
       position: static;
+    }
+    .breadcrumb,
+    .breadcrumb {
+      margin-bottom: 45px;
+    }
+    .contents__text--sp {
+      line-height: 1.5;
+    }
+    .contents__title--mb {
+      margin-bottom: 20px;
     }
   }
 }
