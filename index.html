@@ -8,6 +8,8 @@
   <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
   伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
   <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+  <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+  <script src="https://unpkg.com/flatpickr"></script>
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,24 +37,27 @@
     </span>
 
     <section class="modal">
-      <h2 class="modal__title">宿泊予約</h2>
-      <form class="modal__body" action="">
-        <label class="modal__label" for="name">お名前</label>
-        <input id="name" type="text">
-        <label class="modal__label" for="mail">メールアドレス</label>
-        <input id="mail" type="text">
-        <label class="modal__label" for="plan">ご希望プラン</label>
-        <select class="modal__list" name="plan" id="plan">
-          <option value="who">--- 選択してください ---</option>
-          <option value="懐石プラン">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
-          <option value="特別宿泊プラン">平日に優雅に楽しむ、特別宿泊プラン
-          <option value="ファミリープラン">絶景貸切露天と個室会席を満喫できるファミリープラン
-          </option>
-        </select>
-        <label class="modal__date" for="calendar">日付選択</label>
-        <input id="calendar" type="date">
-      </form>
-      <!-- /.modal__body -->
+      <div class="modal__mask">
+        <h2 class="modal__title">宿泊予約</h2>
+        <form class="modal__body" action="">
+          <label class="modal__label" for="name">お名前</label>
+          <input id="name" type="text">
+          <label class="modal__label" for="mail">メールアドレス</label>
+          <input id="mail" type="text">
+          <label class="modal__label" for="plan">ご希望プラン</label>
+          <select class="modal__list" name="plan" id="plan">
+            <option value="who">--- 選択してください ---</option>
+            <option value="懐石プラン">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+            <option value="特別宿泊プラン">平日に優雅に楽しむ、特別宿泊プラン
+            <option value="ファミリープラン">絶景貸切露天と個室会席を満喫できるファミリープラン
+            </option>
+          </select>
+          <label class="modal__date" for="flatpickr">日付選択</label>
+          <input type="text" id="flatpickr" name="calendar">
+        </form>
+        <!-- /.modal__body -->
+      </div>
+      <!-- /.modal__mask -->
     </section>
     <!-- /.modal -->
   </header>
@@ -65,6 +70,13 @@
         <li class="mv__item"><img class="mv__img" src="img/mainbg02.png" alt=""></li>
         <li class="mv__item"><img class="mv__img" src="img/mainbg03.png" alt=""></li>
       </ul>
+      <div class="mv-button">
+        <ul class="mv-button__list">
+          <li class="mv-button__item"><a href="#" class="my-button__link my-button__link--target"></a></li>
+          <li class="mv-button__item"><a href="#" class="my-button__link"></a></li>
+          <li class="mv-button__item"><a href="#" class="my-button__link"></a></li>
+        </ul>
+      </div>
       <div class="mv__txt-wrap">
         <p class="mv__txt">頑張る人の</p>
         <p class="mv__txt">頑張らない時間</p>
@@ -346,7 +358,10 @@
   <!-- /.footer -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-  <script src="../xd_design_comp/main.js"></script>
+  <script>
+    flatpickr("#flatpickr", {});
+  </script>
+  <script src="../xd_design_comp/js/main.js"></script>
 </body>
 
 </html>

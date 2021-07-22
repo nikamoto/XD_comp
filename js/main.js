@@ -10,7 +10,9 @@ $(function () {
   });
 });
 
-$(function() {
+
+
+/*$(function() {
   //画像の枚数
   let count = $('.mv_item').length;
 
@@ -29,5 +31,19 @@ $(function() {
   //タイマー用の変数
   let timer;
 
+  //1番目の要素以外を非表示
   $('.mv__item:not(:first-child)').hide();
-})
+
+  timer = setInterval(slideTimer, interval);
+
+  function slideTimer() {
+    //1番目をフェードアウト
+    $('.mv__item:nth-child(' + current + ')').animate({
+      transform: 'scale(1.1)'
+    }, 2000).fadeOut(duration);
+
+    //次の画像をフェードイン
+    $('.mv__item:nth-child(' + next + ')').fadeIn(duration);
+  }
+});
+*/
