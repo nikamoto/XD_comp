@@ -38,24 +38,28 @@
 
     <section class="modal">
       <div class="modal__mask">
-        <h2 class="modal__title">宿泊予約</h2>
-        <form class="modal__body" action="">
-          <label class="modal__label" for="name">お名前</label>
-          <input id="name" type="text">
-          <label class="modal__label" for="mail">メールアドレス</label>
-          <input id="mail" type="text">
-          <label class="modal__label" for="plan">ご希望プラン</label>
-          <select class="modal__list" name="plan" id="plan">
-            <option value="who">--- 選択してください ---</option>
-            <option value="懐石プラン">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
-            <option value="特別宿泊プラン">平日に優雅に楽しむ、特別宿泊プラン
-            <option value="ファミリープラン">絶景貸切露天と個室会席を満喫できるファミリープラン
-            </option>
-          </select>
-          <label class="modal__date" for="flatpickr">日付選択</label>
-          <input type="text" id="flatpickr" name="calendar">
-        </form>
-        <!-- /.modal__body -->
+        <div class="modal__wrap">
+          <h2 class="modal__title">宿泊予約</h2>
+          <form class="modal__body" action="">
+            <label class="modal__label" for="name">お名前</label>
+            <input class="modal__name modal-mb" id="name" type="text" placeholder="例：石井正悟">
+            <label class="modal__label" for="mail">メールアドレス</label>
+            <input class="modal__mail modal-mb" id="mail" type="text" placeholder="例：Example@example.com">
+            <label class="modal__label" for="plan">ご希望プラン</label>
+            <select class="modal__list modal-mb" name="plan" id="plan" placeholder="プランを選択してください">
+              <option value="who">--- 選択してください ---</option>
+              <option value="懐石プラン">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+              <option value="特別宿泊プラン">平日に優雅に楽しむ、特別宿泊プラン
+              <option value="ファミリープラン">絶景貸切露天と個室会席を満喫できるファミリープラン
+              </option>
+            </select>
+            <label class="modal__date" for="flatpickr">日付選択</label>
+            <input type="text" id="flatpickr" name="calendar" placeholder="日時を選択してください">
+            
+          </form>
+          <!-- /.modal__body -->
+        </div>
+        <!-- /.modal__wrap -->
       </div>
       <!-- /.modal__mask -->
     </section>
