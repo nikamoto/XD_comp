@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "setting";
+@import "base";
 @import "mixin";
 
 /* resetCSS */
@@ -155,7 +155,7 @@ body {
   @include font;
 }
 .modal {
-  display: none;
+  display: block;
 }
 .icon {
   text-align: center;
@@ -209,7 +209,6 @@ body {
     -o-object-fit: contain;
     object-fit: contain;
   }
-
   .nav-toggle {
     display: none;
     position: relative;
@@ -235,6 +234,49 @@ body {
   .nav-toggle__item:nth-child(3) {
     bottom: 0;
   }
+  .modal__mask {
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,.7);
+  }
+  .modal__wrap {
+    width: 28.5%;
+    height: 600px;
+    padding: 25px 60px 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff
+  }
+  .modal__title {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 26.5px;
+    border-bottom: 1px solid #E7E7E7;
+  }
+  .modal__name,.modal__mail,.modal__list {
+    @include input;
+  }
+  .modal__list {
+    width: 100%;
+    padding: 3px;
+    font-size: 1.4rem;
+  }
+  .modal__label,.modal__date {
+    display: block;
+    margin-bottom: 12px;
+  }
+  .modal__label:first-child {
+    margin-top: 32px;
+  }
+  .modal-mb {
+    margin-bottom: 11px;
+  }
 }
 
 /* メインヴィジュアル*/
@@ -242,9 +284,53 @@ body {
 .mv {
   position: relative;
   width: 100%;
+  height: auto;
   .mv__img-wrap {
+    position: relative;
     width: 100%;
-    height: auto;
+    height: calc(100vh + 10px);
+    overflow: hidden;
+  }
+  .mv__item {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-animation: anime 36s 0s infinite;
+    animation: anime 36s 0s infinite;
+  }
+  .mv__item:nth-of-type(2) {
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+  }
+
+  .mv__item:nth-of-type(3) {
+    -webkit-animation-delay: 24s;
+    animation-delay: 24s;
+  }
+
+  
+  @keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    6% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      transform: scale(1.2);
+      z-index: 9;
+    }
+    100% {
+      opacity: 0;
+    }
   }
   .mv__img {
     width: 100%;
@@ -252,20 +338,23 @@ body {
     -o-object-fit: cover;
     object-fit: cover;
     display: block;
+    transition: all 3s;
   }
-
+  .my-button__link {
+  }
   .mv__txt-wrap {
     width: 10%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    z-index: 11;
     position: absolute;
     right: 25%;
     top: 32%;
   }
   .mv__txt {
-    font-size: 2rem;
+    font-size: $font34;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
