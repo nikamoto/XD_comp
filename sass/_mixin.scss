@@ -11,3 +11,9 @@
 @mixin font($fon: 3.6rem) {
   font-size: $fon;
 }
+
+@mixin input() {
+  width: 100%;
+  padding: 3px;
+  font-size: 1.4rem;
+}
