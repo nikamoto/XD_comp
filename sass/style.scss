@@ -155,7 +155,7 @@ body {
   @include font;
 }
 .modal {
-  display: block;
+  display: none;
 }
 .icon {
   text-align: center;
@@ -192,6 +192,7 @@ body {
   }
 
   .reserve {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -234,23 +235,31 @@ body {
   .nav-toggle__item:nth-child(3) {
     bottom: 0;
   }
-  .modal__mask {
+  .modal {
     position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+  .modal__mask {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(255,255,255,.7);
+    z-index: -1;
   }
   .modal__wrap {
-    width: 28.5%;
-    height: 600px;
-    padding: 25px 60px 90px;
+    position: relative;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,);
+    width: 28.5%;
+    height: 600px;
+    padding: 25px 60px 90px;
     background-color: #fff
   }
   .modal__title {
@@ -258,6 +267,14 @@ body {
     font-size: 2rem;
     padding-bottom: 26.5px;
     border-bottom: 1px solid #E7E7E7;
+  }
+  .modal__close {
+    position: absolute;
+    font-size: 2rem;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    cursor: pointer;
   }
   .modal__name,.modal__mail,.modal__list {
     @include input;
@@ -276,6 +293,17 @@ body {
   }
   .modal-mb {
     margin-bottom: 11px;
+  }
+  .modal__btn-wrap {
+    text-align: center;
+  }
+  .modal__btn {
+    vertical-align: middle;
+    margin-top: 64px;
+    padding: 10px 0px;
+    width: 198px;
+    display: inline-block;
+    background-color: #fff;
   }
 }
 
