@@ -10,6 +10,23 @@ $(function () {
   });
 });
 
+// modal
+$(function () {
+  $('.reserve').click(function () {
+    $('.modal').fadeIn(100);
+    $('.modal__close,.modal__mask').click(function () {
+      $('.modal').fadeOut(100);
+    });
+    return false;
+  });
+});
+
+// カレンダー(flatpickr)
+flatpickr("#flatpickr", {
+  locale: "ja",
+  minDate: "today",
+  mode:"multiple"
+});
 
 
 /*$(function() {

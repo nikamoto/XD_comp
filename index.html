@@ -37,31 +37,34 @@
     </span>
 
     <section class="modal">
-      <div class="modal__mask">
-        <div class="modal__wrap">
-          <h2 class="modal__title">宿泊予約</h2>
-          <form class="modal__body" action="">
-            <label class="modal__label" for="name">お名前</label>
-            <input class="modal__name modal-mb" id="name" type="text" placeholder="例：石井正悟">
-            <label class="modal__label" for="mail">メールアドレス</label>
-            <input class="modal__mail modal-mb" id="mail" type="text" placeholder="例：Example@example.com">
-            <label class="modal__label" for="plan">ご希望プラン</label>
-            <select class="modal__list modal-mb" name="plan" id="plan" placeholder="プランを選択してください">
-              <option value="who">--- 選択してください ---</option>
-              <option value="懐石プラン">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
-              <option value="特別宿泊プラン">平日に優雅に楽しむ、特別宿泊プラン
-              <option value="ファミリープラン">絶景貸切露天と個室会席を満喫できるファミリープラン
-              </option>
-            </select>
-            <label class="modal__date" for="flatpickr">日付選択</label>
-            <input type="text" id="flatpickr" name="calendar" placeholder="日時を選択してください">
-            
-          </form>
-          <!-- /.modal__body -->
-        </div>
-        <!-- /.modal__wrap -->
+      <div class="modal__mask"></div>
+      <div class="modal__wrap">
+        <h2 class="modal__title">宿泊予約</h2>
+        <span class="modal__close">☓</span>
+        <form class="modal__body" action="">
+          <label class="modal__label" for="name">お名前</label>
+          <input class="modal__name modal-mb" id="name" type="text" placeholder="例：石井正悟">
+          <label class="modal__label" for="mail">メールアドレス</label>
+          <input class="modal__mail modal-mb" id="mail" type="text" placeholder="例：Example@example.com">
+          <label class="modal__label" for="plan">ご希望プラン</label>
+          <select class="modal__list modal-mb" name="plan" id="plan" placeholder="プランを選択してください">
+            <option value="who">--- 選択してください ---</option>
+            <option value="懐石プラン">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+            <option value="特別宿泊プラン">平日に優雅に楽しむ、特別宿泊プラン
+            <option value="ファミリープラン">絶景貸切露天と個室会席を満喫できるファミリープラン
+            </option>
+          </select>
+          <label class="modal__date" for="flatpickr">日付選択</label>
+          <input type="text" id="flatpickr" name="calendar" placeholder="日時を選択してください">
+          <div class="modal__btn-wrap">
+            <input class="modal__btn" type="submit" value="送信する">
+          </div>
+
+        </form>
+        <!-- /.modal__body -->
       </div>
-      <!-- /.modal__mask -->
+      <!-- /.modal__wrap -->
+
     </section>
     <!-- /.modal -->
   </header>
@@ -362,9 +365,7 @@
   <!-- /.footer -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-  <script>
-    flatpickr("#flatpickr", {});
-  </script>
+
   <script src="../xd_design_comp/js/main.js"></script>
 </body>
 
