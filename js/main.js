@@ -25,7 +25,27 @@ $(function () {
 flatpickr("#flatpickr", {
   locale: "ja",
   minDate: "today",
-  mode:"multiple"
+  mode: "multiple"
+});
+
+// tab
+$(function () {
+  $('.info__tab').click(function () {
+
+    let index = $('.info__tab').index(this);
+
+    $('.information__content').removeClass('show').eq(index).addClass('show');
+  });
+});
+
+$(function() {
+  $(window).scroll(function(){
+    if($(window).scrollTop() > 0) {
+      $(".header").addClass('is-show');
+    }else {
+      $(".header").removeClass('is-show');
+    }
+  });
 });
 
 

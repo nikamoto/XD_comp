@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <h1 class="header-logo">
       <img class="header-logo__img" src="img/top-header-logo.png" alt="ロゴ">
     </h1>
@@ -223,10 +223,10 @@
       </div>
       <h2 class="section-title">お知らせ</h2>
       <div class="info">
-        <div class="info__tab-wrap">
-          <p class="info__tab active">営業情報</p>
-          <p class="info__tab">その他</p>
-        </div>
+        <ul class="info__tab-wrap">
+          <li class="info__tab active">営業情報</li>
+          <li class="info__tab">その他</li>
+        </ul>
         <div class="information__container">
           <ul class="information__content show">
             <li class="information__item">
@@ -275,7 +275,7 @@
             </li>
           </ul>
 
-          <ul class="information-content-etc">
+          <ul class="information__content information-content-etc">
             <li class="information__item">
               <div class="information__img"><img src="img/news01.png" alt=""></div>
               <dl class="block__def">
