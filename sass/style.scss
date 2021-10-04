@@ -163,6 +163,7 @@ body {
 
 /* ヘッダー */
 .header {
+  background-color: rgba(56, 36, 36, 0.5);
   z-index: 999;
   position: fixed;
   display: flex;
@@ -172,6 +173,9 @@ body {
   align-content: stretch;
   justify-content: flex-start;
   align-items: center;
+  opacity: 0;
+  transform: translateY(-70px);
+  transition: all .3s ease-in;
   .header-logo {
     width: 20%;
   }
@@ -190,7 +194,6 @@ body {
   .nav__link {
     color: #fff;
   }
-
   .reserve {
     cursor: pointer;
     display: flex;
@@ -305,6 +308,11 @@ body {
     display: inline-block;
     background-color: #fff;
   }
+}
+.header.is-show {
+  transform: translateY(0);
+  opacity: 1;
+
 }
 
 /* メインヴィジュアル*/
@@ -538,8 +546,12 @@ body {
   .block__def {
     margin-left: 20px;
   }
-  .information-content-etc {
+  .information__content {
     display: none;
+  }
+  .information__content.show {
+    display: block;
+    display: flex;
   }
 }
 /* アクセスエリア */
